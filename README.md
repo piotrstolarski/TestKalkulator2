@@ -1,32 +1,64 @@
-# Kalkulator – przykładowy projekt do nauki Git
+# Kalkulator – projekt do nauki Git ![tests](https://img.shields.io/badge/tests-pytest-blue)
 
-Ten projekt zawiera prosty zestaw funkcji kalkulatora używany podczas zajęć z systemów kontroli wersji Git.
-
-Plik `kalkulator.py` może zawierać różne wersje funkcji – od podstawowych działań matematycznych po bardziej złożone funkcje.
+Ten projekt zawiera proste przykładowe pliki `kalkulator*.py` oraz testy w `tests/`,
+przydatne podczas nauki pracy z Git i GitHub.
 
 ## Struktura projektu
 
 ```
-kalkulator.py
+kalkulator1.py
+kalkulator2.py
+kalkulator3.py
 README.md
+.gitignore
+LICENSE
+tests/
+  ├─ test_kalkulator1.py
+  ├─ test_kalkulator2.py
+  └─ test_kalkulator3.py
 ```
 
-## Jak uruchomić
+## Jak uruchomić skrypty
 
-W terminalu uruchom:
+Uruchom dowolny z kalkulatorów w terminalu:
 
 ```bash
-python kalkulator.py
+python kalkulator1.py
+python kalkulator2.py
+python kalkulator3.py
 ```
 
-## Cel projektu
+> W `kalkulator2.py` program odczytuje dane z klawiatury.
 
-- nauka podstawowych komend Git
-- tworzenie gałęzi (branch)
-- commitowanie zmian
-- scalanie zmian (merge)
-- praca z GitHub (push, pull)
+## Jak uruchomić testy (pytest)
 
-## Autor
+1. (Opcjonalnie) utwórz i aktywuj wirtualne środowisko:
+   ```bash
+   python -m venv .venv
+   # Windows:
+   .venv\Scripts\activate
+   # macOS/Linux:
+   source .venv/bin/activate
+   ```
+2. Zainstaluj pytest:
+   ```bash
+   python -m pip install --upgrade pip
+   python -m pip install pytest
+   ```
+3. Uruchom testy:
+   ```bash
+   pytest -q
+   ```
 
-Imię i nazwisko studenta
+## Przydatne komendy Git
+
+```bash
+git status
+git add .
+git commit -m "Opis zmian"
+git push -u origin main
+```
+
+## Licencja
+
+Projekt na licencji MIT – patrz plik `LICENSE`.
