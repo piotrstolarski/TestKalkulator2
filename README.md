@@ -1,3 +1,5 @@
+![CI](https://github.com/piotrstolarski/TestKalkulator2/actions/workflows/tests.yml/badge.svg)
+
 # Kalkulator – projekt do nauki Git ![tests](https://img.shields.io/badge/tests-pytest-blue)
 
 Ten projekt zawiera proste przykładowe pliki `kalkulator*.py` oraz testy w `tests/`,
