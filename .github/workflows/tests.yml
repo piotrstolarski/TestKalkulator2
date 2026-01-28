@@ -25,3 +25,12 @@ jobs:
 
             - name: Linting
               run: ruff check .
+
+            - name: Create package
+              run: zip -r kalkulator.zip kalkulator1.py kalkulator2.py kalkulator3.py
+
+            - name: Upload artifact
+              uses: actions/upload-artifact@v4
+              with:
+                name: build-output
+                path: kalkulator.zip
